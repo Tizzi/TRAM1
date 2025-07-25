@@ -1,12 +1,12 @@
 # TRAM1
 “CLIPLAYER.ocx / dll”, “FlashControlV71.dll”, “VETCQnapSDK.dll”
 regsvr32 /s C:\Windows\System32\MyMissing.dll
-PS C:\c++\HK_HDDT>    Get-WinEvent -LogName Application -MaxEvents 20 |
->>      Where-Object { $_.LevelDisplayName -eq 'Error' } |
->>      Select-Object TimeCreated, ProviderName, Id, Message |
->>      Format-List -Property *
-3;C
-
+```
+   Get-WinEvent -LogName Application -MaxEvents 20 |
+     Where-Object { $_.LevelDisplayName -eq 'Error' } |
+     Select-Object TimeCreated, ProviderName, Id, Message |
+     Format-List -Property *
+```
 TimeCreated  : 7/22/2025 12:22:44 PM
 ProviderName : Application Error
 Id           : 1000
