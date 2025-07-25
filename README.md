@@ -1,5 +1,5 @@
 # TRAM1
-“CLIPLAYER.ocx / dll”, “FlashControlV71.dll”, “VETCQnapSDK.dll”
+eventvwr.msc
 regsvr32 /s C:\Windows\System32\MyMissing.dll
 ```
    Get-WinEvent -LogName Application -MaxEvents 20 |
