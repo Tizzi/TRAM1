@@ -3,6 +3,11 @@
 ## Tổng quan
 TCOC.API là một thư viện C# được thiết kế để giao tiếp với hệ thống thu phí đường bộ (Toll Collection System) thông qua giao thức TCP/IP với mã hóa AES. Đây là một client API cho phép các ứng dụng tích hợp với hệ thống thu phí.
 
+🔄 Workflow chính:
+1. Connect → Kết nối TCP và xác thực
+2. Handshake → Duy trì session định kỳ
+3. Transaction → Check-in → Commit/Rollback → Charge
+   
 ## Kiến trúc Tổng thể
 
 ### 1. Cấu trúc Project
